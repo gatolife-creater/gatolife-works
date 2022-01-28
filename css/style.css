@@ -1,0 +1,319 @@
+.canvas-window {
+    display: block;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    right: 0;
+    width: calc(100% - 200px);
+    z-index: 1;
+}
+
+.textbook-header {
+    display: block;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    right: 0;
+    width: calc(100% - 200px);
+    height: 220px;
+    z-index: -1;
+}
+
+.textbook-header-wrapper {
+    display: table;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    color: white;
+}
+
+.lang-img {
+    display: table-cell;
+    width: 200px;
+    height: 100%;
+    vertical-align: bottom;
+}
+
+.lang-description {
+    display: table-cell;
+    width: 250px;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.main-article-wrapper {
+    background-color: white;
+    width: 100%;
+    padding-top: 100px;
+    margin-top: 300px;
+}
+
+.main-article {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.article-section {
+    margin-bottom: 100px;
+}
+
+article {
+    line-height: 2.5em;
+    font-size: 18px;
+}
+
+.divider {
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+#DateTimeDisp {
+    text-align: right;
+}
+
+.margin-btm-50 {
+    margin-bottom: 50px;
+}
+
+.border-right-2 {
+    border-right: 1px #CCC solid;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.nav-item {
+    border-radius: 4px;
+}
+
+.nav-item:hover {
+    background-color: gray;
+}
+
+.subject {
+    margin-bottom: 25px;
+    text-indent: 2em;
+}
+
+.subject-title {
+    display: block;
+    width: 80%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border: 2px black solid;
+    border-radius: 15px;
+    text-indent: 2em;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.textbook {
+    display: block;
+    width: 80%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 5px;
+    border: 2px black solid;
+    border-radius: 15px;
+    text-indent: 4em;
+}
+
+summary {
+    color: gray;
+}
+
+summary:hover {
+    opacity: 0.5;
+}
+
+details[open] summary {
+    display: none;
+}
+
+
+/* オープン時にアニメーションを設定 */
+
+details[open] .detail-content1 {
+    animation: fadeIn 0.3s ease;
+}
+
+details[open] .detail-content2 {
+    animation: fadeIn 0.6s ease;
+}
+
+details[open] .detail-content3 {
+    animation: fadeIn 0.9s ease;
+}
+
+details[open] .detail-content4 {
+    animation: fadeIn 1.2s ease;
+}
+
+details[open] .detail-content5 {
+    animation: fadeIn 1.4s ease;
+}
+
+details[open] .detail-content6 {
+    animation: fadeIn 1.6s ease;
+}
+
+details[open] .detail-content7 {
+    animation: fadeIn 1.7s ease;
+}
+
+details[open] .detail-content8 {
+    animation: fadeIn 1.8s ease;
+}
+
+details[open] .detail-content9 {
+    animation: fadeIn 1.9s ease;
+}
+
+
+/* details[] */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        /* 透明 */
+        transform: translateX(100px);
+        /* 上から表示 */
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+iframe,
+img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Chrome、Safari以外 */
+
+summary {
+    display: block;
+}
+
+
+/* Chrome、Safari */
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+footer {
+    width: 100%;
+}
+
+.mouse-stalker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1px;
+    height: 1px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    pointer-events: none;
+    mix-blend-mode: exclusion;
+}
+
+.mouse-stalker>div {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fff;
+    flex-shrink: 0;
+}
+
+.editor {
+    /* display: block  ; */
+    width: 600px;
+    background-color: #333;
+}
+
+.editor-top {
+    height: 30px;
+    background-color: gray;
+    color: white;
+    text-indent: 2em;
+    line-height: 30px;
+}
+
+.editor-main {
+    /* display: inline-block; */
+    width: 95%;
+    padding-top: 10px !important;
+    margin: 0;
+    font-size: 15px;
+    line-height: 20px;
+    float: right;
+}
+
+jargon {
+    border-bottom: 1px gray dashed;
+}
+
+jargon:hover {
+    border-bottom: 1px gray dotted;
+}
+
+jargon a {
+    color: black;
+    text-decoration: none;
+}
+
+jargon a:hover {
+    color: gray;
+}
+
+jargon:hover {
+    color: gray;
+}
+
+#container {
+    margin: 20px;
+    width: 400px;
+    height: 200px;
+}
+
+textarea {
+    resize: none;
+}
+
+::selection {
+    background: #009e8f;
+    color: rgb(255, 255, 255);
+}
+
+.clearfix:after {
+    content: "";
+    /* 擬似要素を実体化 */
+    clear: both;
+    /* floatを解除する */
+    display: block;
+    /* ブロック要素にする */
+}
